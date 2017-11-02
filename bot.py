@@ -67,14 +67,14 @@ def sendMessage(to, text, contentMetadata={}, contentType=0):
 #---------------------------[AutoLike-nya]---------------------------#
 def autolike():
      for zx in range(0,100):
-        hasil = cl.activity(limit=100)
+        hasil = cl.activity(limit=50)
         if hasil['result']['posts'][zx]['postInfo']['liked'] == False:
           try:    
             #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
             cl.like(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],likeType=1002)
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By Farzain - zFz\n\nSubscribe Channel Saya yak kalau mau bisa kayak gini\nhttps://youtube.com/c/zfz48")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Autolike By AnnCode\n\nOpen Send Sticker & Theme Line\n10©=1k\n50©=5k\n100©=10k\n150©=15k\n200©=20k\n250©=25k\n300©=30k\nDan Seterusnya\n\nReady Juga Akun Coin Line Express, Harga? Pc\n\nMinat? Langsung Pm Line\nline.me/ti/p/~Arch.go\nline.me/ti/p/~Arch.go\nline.me/ti/p/~Arch.go")
             #-----------------------------[JANGAN DIEDIT - Hargai Saya]-----------------------------#
-            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"UBAH_INI_SESUAI_KEINGINAN_KALIAN")
+            cl.comment(hasil['result']['posts'][zx]['userInfo']['mid'],hasil['result']['posts'][zx]['postInfo']['postId'],"Jangan Lupa Lb TL gua brow :v")
             print "Like"
           except:
             pass
